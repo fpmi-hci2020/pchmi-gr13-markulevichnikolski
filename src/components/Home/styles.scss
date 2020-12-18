@@ -1,0 +1,98 @@
+.home-page-container {
+  width: 100%;
+  height: 100%;
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    background: #F9CB55;
+    height: 5em;
+    align-items: center;
+
+    & .label-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 6em;
+
+      & .burger-button {
+        margin: 0 1em 0 3em;
+      }
+
+      & .logo {
+        font-size: 25px;
+        margin: 0 1em;
+      }
+
+      & .search-container {
+        width: 20em;
+        height: 2em;
+        border-radius: 20px;
+        border: 1px solid #55abe0;
+        background: lightgray;
+        padding: 0 1em;
+        margin: 0 1em;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    & .navigation-container {
+      position: absolute;
+      right: 5em;
+      display: flex;
+
+      & .navigation-item {
+        margin-right: 2em;
+        cursor: pointer;
+      }
+
+      & .profile-item {
+        position: relative;
+
+        & .profile-item-container {
+          position: absolute;
+          display: none;
+          width: 7em;
+          flex-direction: column;
+          align-items: center;
+          transform: translateX(-35%);
+          //border: 1px solid black;
+          //border-radius: 3px;
+          //background: white;
+
+          &.show {
+            display: flex;
+          }
+
+          & .logout-button {
+            width: 70%;
+            height: 2.5em;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color: lightblue;
+            border: none;
+            font-size: 16px;
+
+            &:active {
+              transform: scale(0.9, 0.9);
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .content-container {
+    width: 100%;
+    height: 100%;
+    background: #FBF9D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+  }
+}

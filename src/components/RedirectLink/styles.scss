@@ -1,0 +1,29 @@
+.redirect-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & span {
+    margin-bottom: 1em;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #55abe0;
+
+    &:visited {
+      text-decoration: none;
+      color: #55abe0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #55abe0;
+    }
+
+    &:focus {
+      text-decoration: none;
+      color: #55abe0;
+    }
+  }
+}
