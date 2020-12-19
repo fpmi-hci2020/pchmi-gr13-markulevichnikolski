@@ -1,0 +1,26 @@
+.good-item {
+  flex: 1;
+  display: flex;
+  margin: 0 1em;
+
+  &:not(:first-child) {
+    margin: 1em;
+  }
+
+  & .good-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .good-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1em;
+
+    & .good-description {
+      margin: 0;
+    }
+  }
+}
