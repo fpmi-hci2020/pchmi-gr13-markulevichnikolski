@@ -6,6 +6,7 @@ import { TiShoppingCart } from 'react-icons/ti';
 import './styles.scss';
 
 import { Context as AuthContext } from '../../context/userContext';
+import Content from '../Content';
 
 const Home = () => {
     const { logout } = useContext(AuthContext);
@@ -49,9 +50,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="content-container">
-                <div>
-                    Content will be here!
-                </div>
+                <Content />
             </div>
         </div>
     );
