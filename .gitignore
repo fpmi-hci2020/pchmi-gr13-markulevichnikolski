@@ -25,3 +25,4 @@ yarn-error.log*
 env-config.js
 .env
 !.env.example
+.idea/workspace.xml

@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a143d8e0-f9d6-4ac7-aa17-c02f94c5714d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Basket/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Basket/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/BasketPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodItem/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodItem/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="a143d8e0-f9d6-4ac7-aa17-c02f94c5714d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +50,7 @@
       <workItem from="1608321164899" duration="90000" />
       <workItem from="1608367098564" duration="3743000" />
       <workItem from="1608370890884" duration="648000" />
-      <workItem from="1608895483214" duration="10663000" />
+      <workItem from="1608895483214" duration="11038000" />
     </task>
     <servers />
   </component>
