@@ -29,7 +29,7 @@ const signin = (dispatch) => {
             return;
         }
 
-        const { token } = response.data.data;
+        const { token, user } = response.data.data;
         if (!token) {
             if (response.data.data.error) {
                 alert(response.data.data.message);
@@ -37,7 +37,9 @@ const signin = (dispatch) => {
             return;
         }
 
+        console.log('AAAAAAAAAa', user);
         localStorage.setItem('token', token);
+        localStorage.setItem('userData', JSON.stringify(user));
         dispatch({ type: LOGIN, payload: token });
 
         history.push('/home');

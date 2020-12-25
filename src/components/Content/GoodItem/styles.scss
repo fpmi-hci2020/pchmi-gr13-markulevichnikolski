@@ -23,4 +23,25 @@
       margin: 0;
     }
   }
+
+  & .buy-button-container {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+
+    & .buy-button {
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      color: #fb5712;
+      background: white;
+      border: 1px solid #fb5712;
+      outline: 0;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.95, 0.95);
+      }
+    }
+  }
 }

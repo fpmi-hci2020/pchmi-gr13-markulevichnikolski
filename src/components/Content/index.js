@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './styles.scss';
+import api from '../../api';
 
 import honor30 from '../../assets/images/honor30.jpeg';
 import samsungA71 from '../../assets/images/samsungA71.jpeg';
@@ -56,17 +57,47 @@ const testContent = [
 ];
 
 const Content = () => {
+    const [goods, setGoods] = useState([]);
+
+    useEffect(() => {
+        const getAllGoods = async () => {
+            try {
+                const response = await api.get('/goods/get');
+                const { goods } = response?.data?.data;
+                console.log(123, goods);
+                if (goods && goods.length) {
+                    setGoods(goods);
+                }
+            } catch (err) {
+                alert(err);
+            }
+        };
+
+        getAllGoods();
+    }, []);
+
     const renderItems = () => {
-        return testContent.map(item => {
+        return goods.map(good => {
             return (
                 <GoodItem
-                    key={item.id}
-                    imgSrc={item.imgSrc}
-                    description={item.description}
-                    price={item.price}
+                    key={good._id}
+                    id={good._id}
+                    imgSrc={good.image}
+                    description={good.description}
+                    price={good.price}
                 />
-            );
-        });
+            )
+        })
+        // return testContent.map(item => {
+        //     return (
+        //         <GoodItem
+        //             key={item.id}
+        //             imgSrc={item.imgSrc}
+        //             description={item.description}
+        //             price={item.price}
+        //         />
+        //     );
+        // });
     };
 
     return renderItems();
