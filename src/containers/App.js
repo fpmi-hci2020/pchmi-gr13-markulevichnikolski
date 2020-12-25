@@ -9,6 +9,7 @@ import ResolveAuth from '../components/ResolveAuth';
 import SignUpPage from './AuthPage/SignUpPage';
 import LoginPage from './AuthPage/LoginPage';
 import HomePage from './HomePage';
+import ProfilePage from './ProfilePage';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route exact path='/signup' component={SignUpPage} />
                 <Route exact path='/login' component={LoginPage} />
                 <PrivateRoute exact path='/home' component={HomePage} />
+                <PrivateRoute exact path='/profile' component={ProfilePage} />
             </Switch>
         </Router>
     );
