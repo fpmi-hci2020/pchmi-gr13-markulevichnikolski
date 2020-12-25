@@ -29,6 +29,11 @@ const GoodItem = (props) => {
                     Buy
                 </button>
             </div>
+            <div className = {`buy-button-container ${props.hideDelButton ? 'hide' : ''}`}>
+                <button className="buy-button" onClick={props.delItem}>
+                    Delete
+                </button>
+            </div>
         </div>
     );
 };
