@@ -26,6 +26,10 @@ const Home = () => {
         history.push('/profile')
     };
 
+    const onBasketClick = () => {
+        history.push('/basket');
+    };
+
     return (
         <div className="home-page-container">
             <div className="header-container">
@@ -50,7 +54,7 @@ const Home = () => {
                             <button className="logout-button" onClick={logout}>logout</button>
                         </div>
                     </div>
-                    <div className="navigation-item">
+                    <div className="navigation-item" onClick={onBasketClick}>
                         <TiShoppingCart size={32} />
                     </div>
                 </div>

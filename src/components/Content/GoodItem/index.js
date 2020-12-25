@@ -24,7 +24,7 @@ const GoodItem = (props) => {
                 <p className="good-description">{props.description}</p>
                 <span>{`${props.price} р.`}</span>
             </div>
-            <div className="buy-button-container">
+            <div className={`buy-button-container ${props.hideBuyButton ? 'hide' : ''}`}>
                 <button className="buy-button" onClick={buyItem}>
                     Buy
                 </button>
