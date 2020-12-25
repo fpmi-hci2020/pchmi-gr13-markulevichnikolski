@@ -5,7 +5,21 @@
   & .title {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    background: #F9CB55;
+
+    & .home-button{
+      font-size: 25px;
+      margin: 0 1em;
+      cursor: pointer;
+  }
+  }
+  & .content {
+    width: 100%;
+    height: 100%;
+    background: #FBF9D1;
+    font-size: 32px;
+    padding: 1em 0;
+    overflow: auto;
   }
 }
