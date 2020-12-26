@@ -21,6 +21,7 @@ const GoodItem = (props) => {
                 <img alt="phone" src={props.imgSrc} />
             </div>
             <div className="good-info">
+                <p className="good-name">{props.name}</p>
                 <p className="good-description">{props.description}</p>
                 <span>{`${props.price} р.`}</span>
             </div>

@@ -83,6 +83,7 @@ const Content = () => {
                     key={good._id}
                     id={good._id}
                     imgSrc={good.image}
+                    name={good.name}
                     description={good.description}
                     price={good.price}
                     hideDelButton
