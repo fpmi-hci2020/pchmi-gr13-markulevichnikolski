@@ -75,7 +75,7 @@ const Content = () => {
 
         getAllGoods();
     }, []);
-
+    
     const renderItems = () => {
         return goods.map(good => {
             return (
@@ -85,6 +85,7 @@ const Content = () => {
                     imgSrc={good.image}
                     description={good.description}
                     price={good.price}
+                    hideDelButton
                 />
             )
         })

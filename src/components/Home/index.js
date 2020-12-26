@@ -9,6 +9,7 @@ import { Context as AuthContext } from '../../context/userContext';
 import Content from '../Content';
 import history from '../../history';
 
+
 const Home = () => {
     const { logout } = useContext(AuthContext);
     const [showUserInfo, setShowUserInfo] = useState(false);
@@ -50,7 +51,7 @@ const Home = () => {
                     <div className="profile-item navigation-item" onClick={manageUserInfo}>
                         <FaUserCircle size={32} />
                         <div className={`profile-item-container ${showUserInfo && 'show'}`}>
-                            <button className="profile-button" onClick={goToProfile}>Profile</button>
+                            <button className="logout-button" onClick={goToProfile}>Profile</button>
                             <button className="logout-button" onClick={logout}>logout</button>
                         </div>
                     </div>
