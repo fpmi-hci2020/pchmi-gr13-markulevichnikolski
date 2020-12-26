@@ -64,7 +64,6 @@ const Content = () => {
             try {
                 const response = await api.get('/goods/get');
                 const { goods } = response?.data?.data;
-                console.log(123, goods);
                 if (goods && goods.length) {
                     setGoods(goods);
                 }

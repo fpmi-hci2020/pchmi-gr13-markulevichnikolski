@@ -27,7 +27,6 @@ const Basket = () => {
 
     const delItem = async (id) => {
         const userId = JSON.parse(localStorage.getItem('userData'))._id;
-        console.log('Suka', id)
         try {
             await api.post('/goods/delBuy', { userId, goodId: id })
             getOrderedGoods();
@@ -36,7 +35,6 @@ const Basket = () => {
         }
     };
 
-    console.log('SUka', orderedGoods);
     const renderOrderedGoods = () => {
         return orderedGoods.map(good => {
             return (

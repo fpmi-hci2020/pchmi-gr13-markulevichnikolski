@@ -24,7 +24,6 @@ const authReducer = (state = initialState, action) => {
 const signin = (dispatch) => {
     return async ({ email, password }) => {
         const response = await api.post('/signin', { email, password });
-        console.log('Response', response.data);
         if (!response.data) {
             return;
         }
@@ -37,7 +36,6 @@ const signin = (dispatch) => {
             return;
         }
 
-        console.log('AAAAAAAAAa', user);
         localStorage.setItem('token', token);
         localStorage.setItem('userData', JSON.stringify(user));
         dispatch({ type: LOGIN, payload: token });

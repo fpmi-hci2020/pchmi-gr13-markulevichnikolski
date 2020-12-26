@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a143d8e0-f9d6-4ac7-aa17-c02f94c5714d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/GoodItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodItem/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodItem/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResolveAuth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResolveAuth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/userContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/userContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,15 +81,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608935896835">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608935896835" />
-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608930523187">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1608930523187" />
   </component>
 </project>

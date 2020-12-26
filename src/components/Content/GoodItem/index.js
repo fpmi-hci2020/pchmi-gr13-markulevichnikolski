@@ -7,7 +7,6 @@ import './styles.scss';
 const GoodItem = (props) => {
     const buyItem = async () => {
         const userId = JSON.parse(localStorage.getItem('userData'))._id;
-        console.log('Suka', props.id)
         try {
             await api.post('/goods/buy', { userId, goodId: props.id })
         } catch (err) {
