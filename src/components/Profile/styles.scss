@@ -28,8 +28,26 @@
         padding: 1em 0;
         overflow: auto;
 
-        .first-last-name{
-            margin: 0 1em;
+        & .name-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+
+            & .first-last-name{
+                margin: 0 1em;
+            }
+        }
+
+        & .profile-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
         }
     }
 }

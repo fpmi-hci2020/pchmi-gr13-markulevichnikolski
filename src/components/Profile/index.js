@@ -7,8 +7,7 @@ import './styles.scss';
 const Profile = () => {
     const userDataProfile = JSON.parse(localStorage.getItem('userData'));
 
-    const goHome = () =>
-    {
+    const goHome = () => {
         history.push('/home')
     }
 
@@ -19,7 +18,12 @@ const Profile = () => {
                 <div className = "profile-logo">Profile</div>
             </div>
             <div className = "color-bottom">
-                <h2 className = "first-last-name">{userDataProfile.lastName} {userDataProfile.firstName}</h2>
+                <div className="profile-image">
+                    <img src={userDataProfile.image} alt="profile" />
+                </div>
+                <div className="name-container">
+                    <h2 className = "first-last-name">{userDataProfile.lastName} {userDataProfile.firstName}</h2>
+                </div>
             </div>
         </div>
     );
