@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'http://localhost:3030'
+    baseURL: 'https://glacial-lowlands-06396.herokuapp.com/'
 });
 
 instance.interceptors.request.use(config => {
